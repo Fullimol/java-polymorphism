@@ -14,12 +14,12 @@ public class EntrenadorEquipo extends Entrenador {
     //metodos
     @Override
     public double calcularSueldo() {
-        int anioExperiencia = 2024 - getAnioIngreso();
         double sueldo = 0;
+        int anioExperiencia = 2024 - getAnioIngreso();
 
         if (anioExperiencia < 3) {
             sueldo = sueldoFijo;
-        } else if (anioExperiencia > 3 && anioExperiencia < 6) {
+        } else if (anioExperiencia >= 3 && anioExperiencia < 6) {
             sueldo = sueldoFijo * 1.04;
         } else if (anioExperiencia > 6) {
             sueldo = sueldoFijo * 1.12;

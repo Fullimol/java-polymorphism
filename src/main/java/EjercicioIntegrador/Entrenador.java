@@ -18,7 +18,7 @@ public abstract class Entrenador {
 
     //metodos
     public String getNombreCompleto() {
-        return nombre;
+        return nombre + " " + apellido;
     }
 
     abstract double calcularSueldo();
